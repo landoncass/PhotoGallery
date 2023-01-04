@@ -8,3 +8,35 @@ body {
   margin: 0;
   min-height: 100%;
 }
+
+h1 {
+  color: blue;
+}
+
+.Landing {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  max-width: 64rem;
+  padding: 0 2rem;
+}
+
+#CategoryListPhoto {
+  width: 100%;
+  padding: 1rem 0rem 1rem 0rem;
+}
+
+.CategorySection {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border-style: solid;
+  border-color: grey;
+  padding: 1rem 2rem;
+  margin: 0rem 0rem 1rem;
+}
+
+.CategoryList {
+  display: flex;
+  justify-content: space-between;
+}

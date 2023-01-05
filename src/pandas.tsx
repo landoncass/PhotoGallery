@@ -4,4 +4,11 @@ import { PhotoList } from './PhotoList'
 import { PhotoDetail } from './PhotoDetail'
 import sample from './sample.json'
 
-// export function pandas(props:
+export function Pandas() {
+  const text = 'pandas'
+  return (
+    <div>
+      <PhotoList category={text} />
+    </div>
+  )
+}

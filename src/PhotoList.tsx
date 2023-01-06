@@ -18,12 +18,12 @@ export function PhotoListPage() {
       <div>
         {sample[params.categories!].photos.map((photo, index) => {
           return (
-            // <Link to={`./${index}`} key={index}>
-            <div>
-              <img src={photo.imageURL} width="100%" key={index} />
-              {photo.title}
-            </div>
-            // </Link>
+            <Link to={`./${index}`} key={index}>
+              <div>
+                <img src={photo.imageURL} width="100%" key={index} />
+                {photo.title}
+              </div>
+            </Link>
           )
         })}
       </div>

@@ -5,6 +5,13 @@ import { PhotoDetail } from './PhotoDetail'
 import sample from './sample.json'
 import { Routes, Route, Link } from 'react-router-dom'
 
+export type PhotoListItemType = {
+  id: string
+  title: string
+  description: string
+  photos: [string]
+}
+
 export function App() {
   return (
     <div className="Landing">
@@ -16,7 +23,8 @@ export function App() {
       <main>
         <Routes>
           <Route path="/" element={<CategoryList />}></Route>
-          <Route path="/:id" element={<PhotoListPage />}></Route>
+          <Route path="/:categories" element={<PhotoListPage />}></Route>
+          <Route path="/:categories/:photoIndex" element={<PhotoDetail />} />
           <Route path="*" element={<p>Oops, that URL is unknown</p>}></Route>
         </Routes>
       </main>

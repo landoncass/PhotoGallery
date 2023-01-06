@@ -2,6 +2,7 @@ import React from 'react'
 import sample from './sample.json'
 import { PhotoDetail } from './PhotoDetail'
 import { Link } from 'react-router-dom'
+import { PhotoListPage } from './PhotoList'
 
 const categories = Object.entries(sample).map((category) => (
   <section className="CategorySection">
